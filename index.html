@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Threat Intelligence Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="container0">
+            <h1>Real-Time Phishing Intelligence</h1>
+            <p>Stay ahead of cyber threats with our advanced phishing detection and analysis platform</p>
+        </div>
+        <div class="accounts">
+            <a href="/signup" class="signup-button"><button class="signup">Sign up</button></a>
+            <p>Already a user? <a href="/login">Sign in</a></p>
+        </div>        
+    </div><hr>
+    <div class="container">
+        <div class="live-threats">
+            <h2>🚨 Active Threats</h2>
+            <div class="threat-ticker" id="threatTicker">
+                <!-- Threats will be inserted by JavaScript -->
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Global Impact</h3>
+                <div class="stat-number">$20B+</div>
+                <p>Annual losses to phishing attacks</p>
+            </div>
+            <div class="stat-card">
+                <h3>Attack Frequency</h3>
+                <div class="stat-number">3.4B</div>
+                <p>Phishing emails sent daily</p>
+            </div>
+            <div class="stat-card">
+                <h3>Response Time</h3>
+                <div class="stat-number">82%</div>
+                <p>Of breaches occur within minutes</p>
+            </div>
+        </div>
+
+        <div class="latest-attacks">
+            <h2>Emerging Threats</h2>
+            <ul class="attack-list" id="attackList">
+                <!-- Attacks will be inserted by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="impact-section">
+            <div class="impact-card">
+                <h2>Industry Impact</h2>
+                <canvas id="industryChart"></canvas>
+            </div>
+            <div class="impact-card">
+                <h2>Attack Evolution</h2>
+                <canvas id="trendChart"></canvas>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Protect Your Organization</h2>
+            <p>Start monitoring and preventing phishing attacks in real-time</p>
+            <a href="/login" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
