@@ -1,39 +1,39 @@
-# Phishing Detection System 🛡️
+# Phishing Detection System
 
 A Python-based phishing detection application that analyzes URLs and email-related data to identify potentially malicious or phishing attempts.  
 The system combines **feature-based machine learning**, **security heuristics**, and a **Flask web interface** to simulate a real-world phishing analysis tool.
 
 ---
 
-## 📌 Features
+## Features
 
-- 🔍 **URL Phishing Detection**
+- **URL Phishing Detection**
   - Extracts structural features from URLs
   - Uses a trained Random Forest model to classify URLs as phishing or safe
 
-- 📂 **Bulk URL Analysis**
+- **Bulk URL Analysis**
   - Upload files (`.txt`, `.csv`, `.html`) containing multiple URLs
   - Batch prediction support
 
-- 📧 **Email Header Analysis**
+- **Email Header Analysis**
   - Parses email headers
   - Detects mismatches between `From` and `Received` domains
   - Highlights potential spoofing indicators
 
-- 🌐 **Domain Reputation Check**
+- **Domain Reputation Check**
   - WHOIS-based domain age analysis
   - Flags newly created or suspicious domains
 
-- 🔐 **SSL Certificate Validation**
+- **SSL Certificate Validation**
   - Checks SSL certificate validity and expiry
 
-- 👤 **User Authentication**
+- **User Authentication**
   - Signup/Login system using Flask & SQLite
   - Session-based access control
 
 ---
 
-## 🧠 Approach & Architecture
+## Approach & Architecture
 
 1. **Feature Extraction**
    - URL length
@@ -54,7 +54,7 @@ The system combines **feature-based machine learning**, **security heuristics**,
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python  
 - **Framework:** Flask  
@@ -64,15 +64,3 @@ The system combines **feature-based machine learning**, **security heuristics**,
 - **Tools:** Git, GitHub
 
 ---
-
-## 📁 Project Structure
-
-├── app.py # Flask application
-├── feature_extraction.py # URL feature extraction logic
-├── model_training.py # ML model training script
-├── phishing_model.pkl # Trained ML model
-├── pickle_test.py # Model loading verification
-├── requirements.txt # Dependencies
-├── Uploads/ # Temporary uploaded files
-└── data/
-└── malicious_phish.csv # Dataset
